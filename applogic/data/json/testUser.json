@@ -5,7 +5,7 @@
       "type": "integer"
     },
     "errorMessage": {
-      "type": "null"
+      "type": ["null", "string"]
     },
     "isSuccess": {
       "type": "boolean"
