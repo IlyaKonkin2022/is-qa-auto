@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "errorCode": {
+      "type": "integer"
+    },
+    "errorMessage": {
+      "type": "null"
+    },
+    "isSuccess": {
+      "type": "boolean"
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "age": {
+          "type": "integer"
+        },
+        "city": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "registrationDate": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "age",
+        "city",
+        "gender",
+        "id",
+        "name",
+        "registrationDate"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "errorCode",
+    "isSuccess"
+  ]
+}
