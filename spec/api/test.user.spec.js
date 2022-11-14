@@ -54,14 +54,12 @@ describe('Get user info by id', () => {
     const response = await request.get(`${app.methods.api.testUser}1337`);
     expect(response).statusCode(400);
     expect(response.body).toMatchSchema(app.schema.testUser);
-    console.log(response.body)
   });
 
   it(`Get user with incorrect string value`, async () => {
     const response = await request.get(`${app.methods.api.testUser}iddqd`);
     expect(response).statusCode(400);
     expect(response.body).toMatchSchema(app.schema.testUser);
-    console.log(response.body)
   });
 
 });
